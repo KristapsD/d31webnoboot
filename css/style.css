@@ -34,6 +34,7 @@ nav {
     padding: 0 16px 0 0;
     box-sizing: border-box;
     z-index: 100;
+    top: 0;
 }
 
 main {
@@ -81,6 +82,7 @@ footer {
     padding: 8px;
     color: black;
     display: flex;
+    bottom: 0;
 }
 
 footer a {
@@ -285,6 +287,10 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 .card-image:hover {
     box-shadow: 0 10px 6px -6px #777;
 }
+
+.card-image {
+    padding: 10px;
+}
 /*tags*/
 
 #info-div{
@@ -319,6 +325,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     transition: all 0.4s;
     display: inline-block;
     padding: 4px 32px;
+    
 }
 
 #header:hover {
@@ -336,6 +343,19 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
 #mainbody{
     margin-top: 50px;
+}
+
+#mainbody p{
+    width: 95%;
+}
+#photo img{
+    width: 400px;
+    height: auto;
+}
+
+.card-image img {
+    width: 80%;
+    height: 400px;
 }
 
 #menu-icon {
@@ -399,6 +419,21 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     padding-left: 8px;
 }
 
+#searchbox {
+    position: fixed;
+    right: 0;
+    top: 24px;
+    width: 500px;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.4s;
+}
+
+#searchbox input {
+    height: 48px;
+    width: 100%;
+}
+
 #slideout-menu a{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
@@ -419,26 +454,23 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     flex-wrap: wrap;
 }
 
-/*media*/
+/* media queries */
 @media(min-width: 720px) {
     main {
         width: 95%;
     }
-    .card {
-        width: 45%;
+    #About-Card {
+        width: 90%;
     }
 
-    .card .card-image img {
-        width: 100%;
+    .card {
+        width: 45%;
     }
 }
 
 @media(min-width: 1200px) {
     main {
         width: 85%;
-    }
-    #searchbox {
-        display: block;
     }
 }
 
@@ -463,6 +495,14 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 @media(max-width: 719px) {
     main {
         width: 95%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
     }
 
     footer {
@@ -492,9 +532,6 @@ footer #social-media-footer ul li:hover a .fa-twitter {
         color: black;
         transition: 0.4s;
     }
-    .card {
-        width: 100%;
-    }
 }
 
 @media(max-width: 600px) {
@@ -516,5 +553,9 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
     #logo-img {
         padding: 0;
+    }
+
+    head{
+        margin-top: 0px;
     }
 }
