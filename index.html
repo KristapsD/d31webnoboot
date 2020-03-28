@@ -76,42 +76,19 @@
             mollitia ipsa explicabo nostrum libero harum, at nam molestias expedita labore eligendi dolorum aut,
             perferendis saepe omnis accusamus magnam cum. Est praesentium odit accusantium exercitationem! Nesciunt, possimus!
         </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi
-            illum molestiae minima eos reprehenderit? Iste similique ut sunt accusantium, ad hic atque
-            mollitia ipsa explicabo nostrum libero harum, at nam molestias expedita labore eligendi dolorum aut,
-            perferendis saepe omnis accusamus magnam cum. Est praesentium odit accusantium exercitationem! Nesciunt, possimus!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi
-            illum molestiae minima eos reprehenderit? Iste similique ut sunt accusantium, ad hic atque
-            mollitia ipsa explicabo nostrum libero harum, at nam molestias expedita labore eligendi dolorum aut,
-            perferendis saepe omnis accusamus magnam cum. Est praesentium odit accusantium exercitationem! Nesciunt, possimus!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi
-            illum molestiae minima eos reprehenderit? Iste similique ut sunt accusantium, ad hic atque
-            mollitia ipsa explicabo nostrum libero harum, at nam molestias expedita labore eligendi dolorum aut,
-            perferendis saepe omnis accusamus magnam cum. Est praesentium odit accusantium exercitationem! Nesciunt, possimus!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi
-            illum molestiae minima eos reprehenderit? Iste similique ut sunt accusantium, ad hic atque
-            mollitia ipsa explicabo nostrum libero harum, at nam molestias expedita labore eligendi dolorum aut,
-            perferendis saepe omnis accusamus magnam cum. Est praesentium odit accusantium exercitationem! Nesciunt, possimus!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi
-            illum molestiae minima eos reprehenderit? Iste similique ut sunt accusantium, ad hic atque
-            mollitia ipsa explicabo nostrum libero harum, at nam molestias expedita labore eligendi dolorum aut,
-            perferendis saepe omnis accusamus magnam cum. Est praesentium odit accusantium exercitationem! Nesciunt, possimus!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi
-            illum molestiae minima eos reprehenderit? Iste similique ut sunt accusantium, ad hic atque
-            mollitia ipsa explicabo nostrum libero harum, at nam molestias expedita labore eligendi dolorum aut,
-            perferendis saepe omnis accusamus magnam cum. Est praesentium odit accusantium exercitationem! Nesciunt, possimus!
-        </p>
+        <div id="map"></div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        var rvt = {lat: 56.953, lng: 24.103};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 10, center: rvt});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: rvt, map: map});
+        }
+    </script>
     </div>
     <footer>
         <div id="left-footer">
@@ -154,6 +131,7 @@
         </div>
     </div>
         <script src="https://kit.fontawesome.com/5d2eb5be19.js" crossorigin="anonymous"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4XLWmW0ZmCr6yznaGlaLQ1Rwl97PyERA&callback=initMap"> </script>
     </footer>
 </body>
 </html>

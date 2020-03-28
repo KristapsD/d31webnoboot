@@ -231,7 +231,6 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     color: white;
     height: 50px;
     display: flex;
-    
   }
   
   /* Add Animation */
@@ -305,6 +304,12 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 #videos video {
     margin: 10px 10px 10px 10px;
 }
+
+#map {
+    height: 400px; 
+    width: 65%; 
+    margin-bottom: 10px;
+   }
 
 #header {
     font-size: 32px;
