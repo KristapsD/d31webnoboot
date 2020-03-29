@@ -317,7 +317,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     margin-bottom: 10px;
    }
 
-#header {
+.header {
     font-size: 32px;
     font-family: 'Roboto Condensed', sans-serif;
     border-left: 3px solid black;
@@ -328,7 +328,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     
 }
 
-#header:hover {
+.header:hover {
     padding: 4px 48px;
     background: lightgreen;
 }
