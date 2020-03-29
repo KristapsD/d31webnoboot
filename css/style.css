@@ -354,8 +354,8 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 }
 
 .card-image img {
-    width: 80%;
-    height: 400px;
+    width: auto;
+    height: 250px;
 }
 
 #menu-icon {
@@ -475,11 +475,16 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     .card {
         width: 45%;
     }
+
 }
 
 @media(min-width: 1200px) {
     main {
         width: 85%;
+    }
+    .card-image img {
+        width: auto;
+        height: 400px;
     }
 }
 
