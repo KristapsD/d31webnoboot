@@ -408,6 +408,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
     text-align: center;
     opacity: 0;
     pointer-events: none;
+    top: 0;
 }
 
 #slideout-menu ul {
@@ -417,6 +418,14 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
 #slideout-menu ul li {
     padding-left: 8px;
+}
+
+#slideout-menu ul li a{
+    transition: 0.4s;
+}
+
+#slideout-menu ul li a:hover{
+    color: limegreen;
 }
 
 #searchbox {

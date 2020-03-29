@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,7 +28,7 @@
 
         <nav> 
             <div id="logo-img">
-                <a href="#">
+                <a href="index.html">
                     <img src="images/logo.png" alt="alt image">
                 </a>
             </div>
@@ -50,8 +50,7 @@
             </li>
         </ul>
         </nav>
-        <div id="banner">
-        </div>
+            <div id="banner"></div>
     </header>
     <div id="mainbody">
         <h3 id="header">About Us</h3>
@@ -63,14 +62,10 @@
         </p>
         <div id="map"></div>
     <script>
-        // Initialize and add the map
         function initMap() {
-        // The location of Uluru
         var rvt = {lat: 56.953, lng: 24.103};
-        // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {zoom: 10, center: rvt});
-        // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: rvt, map: map});
         }
     </script>
@@ -117,6 +112,7 @@
     </div>
         <script src="https://kit.fontawesome.com/5d2eb5be19.js" crossorigin="anonymous"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4XLWmW0ZmCr6yznaGlaLQ1Rwl97PyERA&callback=initMap"> </script>
+        <script src="js/main.js"></script>
     </footer>
 </body>
 </html>
